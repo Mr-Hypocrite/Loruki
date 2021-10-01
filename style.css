@@ -206,6 +206,28 @@ img {
 
 /* Languages End */
 
+/* Features */
+
+.features-head img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
+.features-sub-head img {
+  width: 300px;
+  justify-self: flex-end;
+}
+
+.features-main .card > i {
+  margin-right: 20px;
+}
+
+.features-main .grid {
+  padding: 30px;
+}
+
+/* Features End */
+
 /* Footer */
 
 .footer .container a{
@@ -221,11 +243,11 @@ img {
 
 /* Sections */
 
-#stats, #languages {
+#stats, #languages, #features-sub-head {
   color: black;
 }
 
-#cloud, #footer{
+#cloud, #footer, #features {
   background-color: black;
 }
 
@@ -237,10 +259,6 @@ img {
 @media only screen and (max-width: 768px) {
   .navbar {
     height: 110px;
-  }
-
-  .navbar .flex {
-    flex-direction: column;
   }
 
   .navbar ul{
@@ -261,6 +279,7 @@ img {
     margin: auto;
   }
 
+
   /* Utilities */
   .grid, .showcase .grid, .stats .grid, .cli .grid, .cloud .grid{
     grid-template-columns: 1fr;
@@ -272,7 +291,30 @@ img {
 
 /* Mobiles */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .navbar ul{
+    font-size: 15px;
+  }
+
+  .showcase-form {
+    padding: 20px;
+    width: 280px;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
 
 }
 
